@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>ANPR webapp</title>
+        <style>
+            body{
+                background-image: url("/static/bg.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+                background-color: #87CEEB;
+                margin-bottom: 0%;
+    
+            }
+            .container{
+                margin-top: 10%;
+                background: #4682B4; 
+                width: 60%;
+                height: fit-content;
+                margin-left: 20%;
+                text-align: center;
+                color: #000000;
+                opacity: 0.7;
+                padding: 3%;
+                
+                border-radius: 12px;
+                
+            }
+    
+    
+            @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+    
+            h1{
+                margin-top: 40px;
+                font-family: 'Fantasy', Copperplate;
+                font-size: 25px;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+                letter-spacing: 5px;
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            }
+    
+            
+    
+            #button {
+                background-color: #483D8B; /* Green */
+                border: none;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 10px 2px;
+                cursor: pointer;
+                }
+    
+            #button {border-radius: 12px;}
+    
+            input[type=file] {
+                width: fit-content;
+                padding: 20px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid black;
+                border-radius: 4px;
+                background:LightSeaGreen;
+                font-weight: bold;
+                }
+                p{
+                    font-weight: bold;
+                }
+    
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p><h1>Number Plate Recognition Using CNN</h1></p>
+            <div class="row">
+                <form method="post" action="/" enctype="multipart/form-data">
+                    <dl>
+                        <p>
+                            <input placeholder="Upload the image of the car" type="file" name="file"  required >
+                        </p>
+                    </dl>
+                    <p>
+                        <input type="submit" value="UPLOAD" id="button"></input>
+                    </p>
+                </form>
+            </div>
+        </div>
+        
+    
+</body>
+</html>
