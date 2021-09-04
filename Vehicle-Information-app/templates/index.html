@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TEAM-09_15</title>
+      <link rel="stylesheet" href="static/style.css">
+      <link rel="stylesheet" href="static/style2.css">
+   </head>
+   <body>
+      <div class="b-body">
+         <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+         <div class="file-upload">
+            <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+            <div class="image-upload-wrap">
+               <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+               <div class="drag-text">
+                  <h3>Drag and drop a file or select add Image</h3>
+               </div>
+            </div>
+            <div class="file-upload-content">
+               <img class="file-upload-image" src="#" alt="your image" />
+               <div class="image-title-wrap">
+                  <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+               </div>
+            </div>
+         </div>
+         <!-- submit button -->
+         <div class="sub-main">
+            <button id="myBtn" class="button-two"><span>Submit</span></button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+               <!-- Modal content --> 
+               <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Description:<h3 id="desc"></h3></h2>  
+                  <h2>RegistrationDate:<h3 id="regdate"></h3></h2>
+                  <h2>EngineNumber:<h3 id="engno"></h3></h2>
+                  <h2>Owner:<h3 id="owner"></h3></h2>
+                  <h2>Insurance:<h3 id="insurance"></h3></h2>
+                  <h2>Variant:<h3 id="variant"></h3></h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="static/myjs.js"></script>
+      <script src="static/output.js"></script>
+   </body>
+</html>

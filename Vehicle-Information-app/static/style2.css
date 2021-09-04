@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
+
+*{margin: 0px; padding: 0px}
+h3 {
+  color: #27ae60;
+
+}
+
+h1, button{
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .button-two {
+    text-align: center;
+    cursor: pointer;
+    font-size:24px;
+    margin: 0 0 0 100px;
+  }
+  /*Button Two*/
+.button-two {
+    border-radius: 4px;
+    background-color: #27ae60;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+  }
+  
+  
+  .button-two span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-two span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button-two:hover span {
+    padding-right: 25px;
+  }
+  
+  .button-two:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .sub-main{
+    width: 30%;
+    margin:22px;
+    position: absolute;
+    right: 30%;
+  }
